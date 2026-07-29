@@ -3,6 +3,8 @@ version: 1
 project:
   id: e2becd5f-0c7f-4ea0-9117-658cc62194dd
   title: Georges Taconet
+  execute:
+    enabled: true
   static_files:
     - Catalogue/partitions
   # description:
@@ -43,8 +45,3 @@ site:
   options:
     logo: header2.png 
     style: _ressources/custom.css
-jupyter:
-  execute:
-    enabled: true
-execute:
-  execute_notebooks: force
