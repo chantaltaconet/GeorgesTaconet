@@ -43,5 +43,8 @@ site:
   options:
     logo: header2.png 
     style: _ressources/custom.css
+jupyter:
+  execute:
+    enabled: true
 execute:
   execute_notebooks: force
