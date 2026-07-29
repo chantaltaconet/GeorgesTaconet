@@ -1,0 +1,4 @@
+source ~/.venv/bin/activate
+jupyter-book clean -y
+jupyter-book build
+jupyter-book start --execute

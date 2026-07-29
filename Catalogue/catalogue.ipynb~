@@ -1,0 +1,53 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "2a58e6f8",
+   "metadata": {},
+   "source": [
+    "# Toutes les oeuvres"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4db9128f",
+   "metadata": {
+     "tags": ["remove-input"]
+   },
+   "outputs": [],
+   "source": [
+    "from itables import show\n",
+    "from itables import options\n",
+    "options.warn_on_undocumented_option = False\n",
+    "import pandas as pd\n",
+    "# Defining the columns to read\n",
+    "usecols = [\"n°opus\",\"titre\",\"Genre\",\"Composé pour\",\"Partition éditée\", \"Partition manuscrite\"]\n",
+    "\n",
+    "# Charger le fichier CSV\n",
+    "df = pd.read_csv(\"CatalogueGeorgesTaconet.csv\", index_col=\"n°opus\", usecols=usecols)\n",
+    "df[\"Partition éditée\"]=df[\"Partition éditée\"].apply(lambda u: f'<a href=\"http://georges.taconet.free.fr/download/partitions/GraveOuEdite/{u}\" target=\"_blank\">PDF</a>')\n",
+    "df.to_html(escape=False, index=False)\n",
+    "# Afficher le tableau\n",
+    "show(df, searchable=True, sortable=True, allow_html=True)"
+   ]
+  }
+ ],
+ "metadata": {
+  "jupyter-book": {
+   "execute": {
+    "hide_code": true
+   }
+  },
+  "jupytext": {
+   "default_lexer": "python"
+  },
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

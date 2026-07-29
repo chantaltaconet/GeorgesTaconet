@@ -1,0 +1,12 @@
+execute:
+  execute_notebooks: force
+  kernel_name: "python3"     # nom du kernel à utiliser
+  hide_code: true
+html:
+  code_cell:
+    toggle: false   # ne pas montrer le bouton pour afficher/masquer
+    show_code: false # ne pas afficher le code par défaut
+sphinx:
+  config:
+    html_extra_path:
+      - pdf

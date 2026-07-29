@@ -1,0 +1,5 @@
+source ~/.venv/bin/activate
+jupyter-book clean -y
+jupyter-book build
+cp -r Catalogue/partitions _build/site/Catalogue  # copie des fichiers statiques 
+jupyter-book start --execute

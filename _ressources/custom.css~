@@ -1,0 +1,5 @@
+/* Centrer le contenu des cellules des tableaux pandas */
+table.dataframe td,
+table.dataframe th {
+    text-align: center;
+}

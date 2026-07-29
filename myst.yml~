@@ -1,0 +1,42 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: e2becd5f-0c7f-4ea0-9117-658cc62194dd
+  title: Georges Taconet
+  # description:
+  # keywords: []
+  #authors: Henri Taconet 2005
+  # github:
+  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+  toc:
+    - file: accueil.md
+    - title: Catalogue musical et partitions
+      children:
+        - file: Catalogue/catalogue.ipynb
+    - title: La Musique
+      children:
+        - file: Musique/ContexteMusical.md
+        - file: Musique/StyleMusical.md
+        - file: Musique/ExtraitsMusicaux.md
+        - file: Musique/Poemes.md
+        - file: Musique/Discographie.md 
+    - title: L'Homme
+      children:
+        - file: Homme/ElementsBiographiques.md
+        - file: Homme/Photos.md
+        - file: Homme/Correspondance.md
+	
+    - title: Actualités
+      file: actualites.md
+    - title: Partitions
+      file: partitions.md 
+    - title: Liens
+      file: liens.md 
+    - title: Association
+      file: association.md
+    - title: Contact 
+      file: contact.md 
+site:
+  template: book-theme
+  options:
+    logo: header2.png 
