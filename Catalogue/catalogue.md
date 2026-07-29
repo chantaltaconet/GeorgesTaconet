@@ -8,9 +8,6 @@ jupyter:
 
 # Catalogue des oeuvres
 
-```{code-cell} python
-print("EXECUTION GITHUB OK")
-```
 
 ```{code-cell} python
 :tags: [remove-input]
