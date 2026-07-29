@@ -25,7 +25,7 @@ project:
     - title: L'Homme
       children:
         - file: Homme/ElementsBiographiques.md
-        - file: Homme/Photos.md
+        - file: Homme/Photos.mdst	
         - file: Homme/Correspondance.md
 	
     - title: Actualités
