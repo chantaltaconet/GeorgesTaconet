@@ -43,3 +43,5 @@ site:
   options:
     logo: header2.png 
     style: _ressources/custom.css
+execute:
+  execute_notebooks: force
