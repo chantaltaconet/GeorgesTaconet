@@ -44,11 +44,11 @@ jobs:
         run: jupyter-book build --html --execute
       - name: Check static files
         run: |
-          find _build/site -type f | grep partitions
+          find _build/site -type f -name index.html -print
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './_build/html'
+          path: './_build/site'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
