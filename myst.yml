@@ -7,7 +7,7 @@ project:
     enabled: true
     cache: false
   static_files:
-    - Catalogue/partitions
+    - catalogue/partitions
   # description:
   # keywords: []
   #authors: Henri Taconet 2005
@@ -16,20 +16,19 @@ project:
   toc:
     - file: accueil.md
     - title: Catalogue musical et partitions
-      children:
-        - file: Catalogue/catalogue.md
+      file: catalogue/catalogue.md
     - title: La Musique
       children:
-        - file: Musique/ContexteMusical.md
-        - file: Musique/StyleMusical.md
-        - file: Musique/ExtraitsMusicaux.md
-        - file: Musique/Poemes.md
-        - file: Musique/Discographie.md 
+        - file: musique/ContexteMusical.md
+        - file: musique/StyleMusical.md
+        - file: musique/ExtraitsMusicaux.md
+        - file: musique/Poemes.md
+        - file: musique/Discographie.md 
     - title: L'Homme
       children:
-        - file: Homme/ElementsBiographiques.md
-        - file: Homme/Photos.md	
-        - file: Homme/Correspondance.md
+        - file: homme/ElementsBiographiques.md
+        - file: homme/Photos.md	
+        - file: homme/Correspondance.md
 	
     - title: Actualités
       file: actualites.md
