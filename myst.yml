@@ -1,11 +1,11 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
+execute:
+  enabled: true
+  cache: false
 project:
   id: e2becd5f-0c7f-4ea0-9117-658cc62194dd
   title: Georges Taconet
-  execute:
-    enabled: true
-    cache: false
   static_files:
     - catalogue/partitions
   # description:
