@@ -39,7 +39,6 @@ df.to_html(classes="table",escape=False, index=False)
 df_filtre_soprano = df[df["Instruments"].str.contains("soprano")]
 df_filtre_piano = df[df["Instruments"]=="piano"]
 ```
-# Afficher le tableau
 ## Toutes les oeuvres
 ```{code-cell} python
 :tags: [remove-input]
