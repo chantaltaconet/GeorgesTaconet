@@ -5,6 +5,7 @@ project:
   title: Georges Taconet
   execute:
     enabled: true
+    cache: false
   static_files:
     - Catalogue/partitions
   # description:
@@ -27,7 +28,7 @@ project:
     - title: L'Homme
       children:
         - file: Homme/ElementsBiographiques.md
-        - file: Homme/Photos.mdst	
+        - file: Homme/Photos.md	
         - file: Homme/Correspondance.md
 	
     - title: Actualités
