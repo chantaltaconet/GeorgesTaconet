@@ -44,7 +44,7 @@ jobs:
         run: jupyter-book build --html --execute
       - name: Check static files
         run: |
-          find _build/site -type f -name index.html -print
+          find _build -type f -name index.html -print
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
