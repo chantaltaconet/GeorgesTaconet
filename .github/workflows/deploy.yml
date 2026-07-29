@@ -42,6 +42,9 @@ jobs:
         run: npm install -g jupyter-book@2.1.6
       - name: Build HTML Assets
         run: jupyter-book build --html --execute
+      - name: Check static files
+        run: |
+          find _build/html -name "1_La_Cascade_edite.pdf" -print
       - name: find index
         run: |
           find _build -type f -name index.html -print
