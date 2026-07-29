@@ -19,9 +19,9 @@ options.warn_on_undocumented_option = False
 import pandas as pd
 
 def partitionGraveeURL(u):
-    return f'<a href="./partitions/GraveOuEdite/{u}" target="_blank">PDF</a>'
+    return f'<a href="/partitions/GraveOuEdite/{u}" target="_blank">PDF</a>'
 def partitionManuscriteURL(u):
-    return f'<a href="./partitions/Manuscrit/{u}" target="_blank">PDF</a>'
+    return f'<a href="/partitions/Manuscrit/{u}" target="_blank">PDF</a>'
 
 # Defining the columns to read
 usecols = ["n°opus","titre","Genre","Instruments","Partition<br>éditée", "Partition<br>manuscrite","Année"]
