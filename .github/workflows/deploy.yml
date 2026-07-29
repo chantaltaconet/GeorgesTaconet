@@ -45,13 +45,10 @@ jobs:
       - name: find index
         run: |
           find _build -type f -name index.html -print
-      - name: find 
-        run: |
-	  find _build -maxdepth 3 -type f | head -30
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './_build/site'
+          path: './_build/html'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
