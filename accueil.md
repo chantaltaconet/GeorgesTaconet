@@ -15,11 +15,6 @@ Georges Taconet est un musicien distingué et discret, un compositeur de la prem
 
 Ce site vous invite à mieux connaître l'homme, à entendre et avoir accès aux œuvres.
 Musiciens, musicologues, mélomanes, amateurs de musique, découvreurs de talents, ce site vous offre l'accès aux partitions de nombreuses mélodies, d'œuvres pour piano, de ses sonates.
-Il rend compte de l'actualité de Georges Taconet, des concerts en France et à l'étranger.
 
-Il permet de devenir membre de l 'Association Georges Taconet .
-
-Pour découvrir la musique de Georges Taconet, vous pouvez :
-- entendre quelques extraits musicaux sur les pages "Téléchargement/Musique" et "Musique/Extraits"
-- télécharger les partitions sur la page "Téléchargement/Partitions" 
+Pour découvrir la musique de Georges Taconet, vous pouvez : entendre quelques extraits musicaux et télécharger les **partitions** sur les pages du catalogue.
 
