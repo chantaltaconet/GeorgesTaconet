@@ -44,4 +44,4 @@ site:
   template: book-theme
   options:
     logo: header2.png 
-    style: _ressources/custom.css
+    style: _ressources/custom_creme3.css

@@ -1,0 +1,374 @@
+/* ==================================================
+   Jupyter Book - Style personnalisé
+   Catalogue des œuvres
+   ================================================== */
+
+
+/* ------------------------------
+   Couleurs globales
+   ------------------------------ */
+
+:root {
+    --main-color: #30305f;
+    --main-hover: #5a5a90;
+    --pastel-bg: #f4f1fa;
+    --table-header: #30305f;
+    --table-border: #d8d8e8;
+
+    --pst-color-text-base: var(--main-color);
+    --pst-color-primary: var(--main-color);
+    --pst-color-link: var(--main-color);
+}
+
+
+/* ------------------------------
+   Fond général
+   ------------------------------ */
+
+body {
+    background-color: var(--pastel-bg) !important;
+    color: var(--main-color) !important;
+}
+
+
+/* Zone principale */
+.bd-main {
+    background-color: var(--pastel-bg) !important;
+}
+
+
+/* ------------------------------
+   Texte général
+   ------------------------------ */
+
+.bd-article,
+.bd-article p,
+.bd-article li,
+.bd-content,
+p,
+li,
+span {
+    color: var(--main-color) !important;
+}
+
+
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--main-color) !important;
+}
+
+
+/* Liens */
+a {
+    color: var(--main-color) !important;
+}
+
+a:hover {
+    color: var(--main-hover) !important;
+}
+
+
+/* ------------------------------
+   Barre latérale gauche
+   ------------------------------ */
+
+.bd-sidebar {
+    background-color: var(--pastel-bg) !important;
+}
+
+.bd-sidebar a {
+    color: var(--main-color) !important;
+}
+
+.bd-sidebar a:hover {
+    color: var(--main-hover) !important;
+}
+
+
+/* ------------------------------
+   Suppression colonne droite
+   (table des matières)
+   ------------------------------ */
+
+.bd-toc {
+    display: none !important;
+}
+
+
+/* Utilisation complète de la largeur */
+
+.bd-main .bd-content {
+    max-width: 100% !important;
+}
+
+.bd-content .bd-article-container {
+    max-width: none !important;
+}
+
+
+/* ------------------------------
+   Bandeau personnalisé
+   ------------------------------ */
+
+.banner {
+    background-image: url("header2.png") !important;
+    background-size: cover;
+    background-position: center;
+
+    background-color: var(--main-color) !important;
+
+    color: white !important;
+
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+
+
+/* ------------------------------
+   Colonne description
+   ------------------------------ */
+
+.table td:nth-child(2),
+.table th:nth-child(2) {
+
+    width: 250px !important;
+
+    white-space: normal !important;
+
+    overflow-wrap: break-word !important;
+}
+
+
+/* ------------------------------
+   itables / DataTables
+   ------------------------------ */
+
+.dataTables_wrapper {
+
+    color: var(--main-color) !important;
+
+    background-color: white !important;
+}
+
+
+.dataTables_filter input,
+.dataTables_length select {
+
+    border: 1px solid #c8c8dc;
+
+    background-color: white;
+
+    color: var(--main-color);
+}
+
+
+/* Pagination */
+
+.dataTables_paginate a {
+
+    color: var(--main-color) !important;
+
+}
+
+
+/* ------------------------------
+   Notes et petits textes
+   ------------------------------ */
+
+small,
+.caption,
+.nb {
+    color: var(--main-color) !important;
+}
+
+/* ==================================================
+   Header Jupyter Book
+   ================================================== */
+
+/* Barre supérieure */
+.bd-header {
+    background-color: #30305f !important;
+    color: white !important;
+}
+
+
+/* Texte du header */
+.bd-header .navbar-brand,
+.bd-header .navbar-nav .nav-link {
+    color: white !important;
+}
+
+
+/* Survol des liens du header */
+.bd-header .navbar-nav .nav-link:hover {
+    color: #ddd9f5 !important;
+}
+
+
+/* Boutons du header (recherche, téléchargement...) */
+.bd-header button {
+    color: white !important;
+}
+
+
+/* Icônes du header */
+.bd-header svg {
+    fill: white !important;
+}
+
+
+/* Zone du titre du livre */
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+
+/* Menu actif */
+.bd-header .nav-link.active {
+    color: #ddd9f5 !important;
+}
+
+.bd-header {
+    background-color: #181876 !important;
+}
+
+/* ==================================================
+   Header supérieur avec logo Jupyter Book / PyData
+   ================================================== */
+
+/* Barre de navigation complète */
+.bd-header,
+.bd-header .navbar,
+.bd-header .navbar-header,
+.bd-navbar {
+    background-color: #181876 !important;
+}
+
+
+/* Zone contenant le logo */
+.navbar-brand {
+    color: white !important;
+}
+
+
+/* Logo éventuel */
+.navbar-brand img {
+    max-height: 40px;
+}
+
+
+/* Texte du titre du livre */
+.navbar-brand span {
+    color: white !important;
+}
+
+
+/* Liens du menu supérieur */
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+
+.navbar-nav .nav-link:hover {
+    color: #ddd9f5 !important;
+}
+
+
+/* Boutons (recherche, GitHub, etc.) */
+.navbar button,
+.navbar .btn {
+    color: white !important;
+}
+
+
+/* Icônes */
+.navbar svg {
+    fill: white !important;
+}
+
+/* =========================================
+   Header MyST Book Theme
+   ========================================= */
+/* Barre supérieure */
+.myst-top-nav {
+    background-color: #ddd9f2 !important;
+    color: white !important;
+    
+}
+/* Zone logo */
+
+.myst-home-link {
+    color: #30305f !important;
+}
+
+.myst-top-nav-menu-button {
+    color: #30305f !important;
+}
+
+
+
+/* Image du logo */
+.myst-home-link-logo img {
+    max-height: 50px !important;
+}
+
+
+/* Recherche */
+.myst-search-bar {
+    background-color: white !important;
+    border-color: #ddd9f5 !important;
+    color: #181876 !important;
+}
+
+
+/* Texte du champ recherche */
+.myst-search-text-placeholder {
+    color: #181876 !important;
+}
+
+
+/* Icône menu mobile */
+.myst-top-nav-menu-button {
+    color: white !important;
+}
+/* =========================================
+   Tableaux pandas / itables
+   ========================================= */
+
+/* Fond général du tableau */
+table.dataframe,
+table.dataframe tbody,
+table.dataframe tr {
+    background-color: white !important;
+}
+
+
+/* Texte des cellules */
+table.dataframe td {
+    color: #30305f !important;
+    background-color: white !important;
+}
+
+
+/* En-tête */
+table.dataframe thead th {
+    background-color: #62a0ea!important;
+    color: white !important;
+}
+
+
+/* Lignes alternées */
+table.dataframe tbody tr:nth-child(even) td {
+    background-color: #f3f2fa !important;
+    color: #30305f !important;
+}
+
+
+/* Survol */
+table.dataframe tbody tr:hover td {
+    background-color: #e5e3f5 !important;
+    color: #181876 !important;
+}

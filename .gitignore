@@ -1,0 +1,12 @@
+# MyST
+_build/
+.myst/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Environnements virtuels
+.venv/
+venv/
