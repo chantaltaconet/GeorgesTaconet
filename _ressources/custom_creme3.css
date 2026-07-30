@@ -128,11 +128,6 @@ table.dataTable thead tr:nth-child(2) th {
 }
 
 
-/* texte */
-table.dataTable thead th {
-  border:1px solid #ddd !important;
-}
-
 
 /* ===============================
    BOUTONS DATATABLES VISIBLES
@@ -187,7 +182,7 @@ table.dataTable thead .dt-column-order:after {
 table.dataTable thead th {
     position: relative;
     padding: 14px 12px !important;
-    font-size: 1rem;
+    font-size: 0.8rem !important;
     text-align: center !important;
 }
 
@@ -196,8 +191,8 @@ table.dataTable thead th {
 .dt-column-search,
 .dt-column-visibility,
 .dt-button {
-    font-size: 1.15rem !important;
-    transform: scale(1.25);
+    font-size: 1rem !important;
+    /*transform: scale(1.25);*/
     opacity: 0.9;
 }
 
@@ -222,12 +217,6 @@ table.dataTable thead .dt-column-order::after {
 }
 
 
-/* Couleur visible sur ton fond bleu/gris */
-table.dataTable thead th button,
-table.dataTable thead th svg {
-    color: #18245f !important;
-    opacity: 1 !important;
-}
 
 
 /* Header du tableau */
@@ -235,10 +224,6 @@ table.dataTable thead tr {
     background-color: #b7bfdc !important;
 }
 
-table.dataTable thead th {
-    color: #17205c !important;
-    font-weight: 700;
-}
 
 
 /* Corps du tableau centré */
@@ -302,4 +287,16 @@ table.dataTable tbody td a {
 .bd-main .bd-content .bd-article-container {
   max-width: 100em !important;
 }
+
+/* Désactiver complètement le mode sombre */
+html.dark {
+    color-scheme: light !important;
+}
+/* éviter le mode sombre illisible*/
+.dark {
+    background: inherit !important;
+    color: inherit !important;
+}
+
+
 
