@@ -36,14 +36,56 @@ def lire_formater_catalogue(usecols):
   
 def filtrer_catalogue(df, filtre):
   match filtre:
-    case "piano":
+    case "voix":
+      df = df[df["Genre"].str.contains("Mélodie|Mélodie|Ensemble vocal",case=False,na=False)]
       df = df.drop(columns=["Genre"])
-      return df[df["Instruments"]=="piano"]
-   
+      return df
+    case "mélodie":
+      df = df[df["Genre"].str.contains("Mélodie")]
+      df = df.drop(columns=["Genre"])
+      return df
+    case "ensemble vocal":
+      df = df[df["Genre"].str.contains("Ensemble vocal")]
+      df = df.drop(columns=["Genre"])
+      return df
+    case "musique religieuse":
+      df = df[df["Genre"].str.contains("Religieuse")]
+      df = df.drop(columns=["Genre"])
+      return df
+    case "clavier":
+      df = df[df["Instruments"].str.contains("piano|orgue|harmonium",case=False,na=False)]
+      df = df.drop(columns=["Genre"])
+      return df
+    case "piano":
+      df = df[df["Instruments"]=="piano"]
+      df = df.drop(columns=["Genre"])
+      return df
+    case "orgue":
+      df = df[df["Instruments"].str.contains("orgue")]
+      df = df.drop(columns=["Genre"])
+      return df
+    case "harmonium":
+      df = df[df["Instruments"].str.contains("harmonium")]
+      df = df.drop(columns=["Genre"])
+      return df
+    case "musique de chambre":
+      df = df[df["Genre"].str.contains("Musique de chambre|Orchestre",case=False,na=False)]
+      df = df.drop(columns=["Genre"])
+      return df
+    case "violon":
+      df = df[df["Instruments"].str.contains("violon|alto",case=False,na=False)]
+      df = df.drop(columns=["Genre"])
+      return df
+    case "violoncelle":
+      df =  df[df["Instruments"].str.contains("violoncelle")]
+      df = df.drop(columns=["Genre"])
+      return df
+
 # Paramètres pour le show
     # columnControl=["order", "colVisDropdown", "searchDropdown"],
     # paging=False
 def afficher_catalogue(df):
+  #df = df.reset_index(drop=True)
   show(df, searchable=True, sortable=True, allow_html=True,columnControl=["order", "colVisDropdown", "searchDropdown"])
   html = """
 <p><br><br>* Les partitions manuscrites ne portent pas de date, les dates mentionnées sont soit celles de dépôt à la SACEM, 

@@ -6,7 +6,7 @@ jupyter:
     name: "python3"
 ---
 
-# Catalogue des œuvres
+# Œuvres pour violon
 
 
 ```{code-cell} python
@@ -17,5 +17,6 @@ from outils.catalogue import afficher_catalogue
 
 usecols = ["n°opus","titre","Genre","Instruments","Partition<br>éditée", "Partition<br>manuscrite","Année"]
 df=lire_formater_catalogue(usecols)
+df=filtrer_catalogue(df,"violon")
 afficher_catalogue(df)
 ```
