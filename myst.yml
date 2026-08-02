@@ -40,6 +40,66 @@ project:
         - file: musique/StyleMusical.md
         - file: musique/ExtraitsMusicaux.md
         - file: musique/Poemes.md
+          children:
+           - file: musique/poemes/abeille.md
+           - file: musique/poemes/amourinegal.md
+           - file: musique/poemes/anges.md
+           - file: musique/poemes/aout.md
+           - file: musique/poemes/attentemystique.md
+           - file: musique/poemes/auborddeleau.md
+           - file: musique/poemes/avril.md
+           - file: musique/poemes/calmedivin.md
+           - file: musique/poemes/cascade.md
+           - file: musique/poemes/chanson.md
+           - file: musique/poemes/chansonvicaire.md
+           - file: musique/poemes/cloche.md
+           - file: musique/poemes/colline.md
+           - file: musique/poemes/decembre.md
+           - file: musique/poemes/doncesera.md
+           - file: musique/poemes/doucenuit.md
+           - file: musique/poemes/elegie.md
+           - file: musique/poemes/endeuil.md
+           - file: musique/poemes/enregardant.md
+           - file: musique/poemes/eternelsmurmures.md
+           - file: musique/poemes/fevrier.md
+           - file: musique/poemes/foretchauve.md
+           - file: musique/poemes/goutesoirjuin.md
+           - file: musique/poemes/hieronparlait.md
+           - file: musique/poemes/invocation.md
+           - file: musique/poemes/invocationautomne.md
+           - file: musique/poemes/invocationregnier.md
+           - file: musique/poemes/invocationvierge.md
+           - file: musique/poemes/janvier.md
+           - file: musique/poemes/jeretrouveenrentrant.md
+           - file: musique/poemes/juillet.md
+           - file: musique/poemes/juin.md
+           - file: musique/poemes/justorumanimae.md
+           - file: musique/poemes/lamouette.md
+           - file: musique/poemes/lavieestcourte.md
+           - file: musique/poemes/mai.md
+           - file: musique/poemes/mars.md
+           - file: musique/poemes/noel.md
+           - file: musique/poemes/novembre.md
+           - file: musique/poemes/nox.md
+           - file: musique/poemes/octobre.md
+           - file: musique/poemes/panisangelicus.md
+           - file: musique/poemes/paysage.md
+           - file: musique/poemes/poursuitedivine.md
+           - file: musique/poemes/preface.md
+           - file: musique/poemes/priere.md
+           - file: musique/poemes/quantaumatin.md
+           - file: musique/poemes/rondel.md
+           - file: musique/poemes/salveregina.md
+           - file: musique/poemes/secret.md
+           - file: musique/poemes/septembre.md
+           - file: musique/poemes/silenceineffable.md
+           - file: musique/poemes/situonslespoetes.md
+           - file: musique/poemes/soir.md
+           - file: musique/poemes/sources.md
+           - file: musique/poemes/tonimagepartout.md
+           - file: musique/poemes/tristesse.md
+           - file: musique/poemes/versprintemps.md
+           - file: musique/poemes/vraisage.md
         - file: musique/Discographie.md 
     - title: L'Homme
       children:
