@@ -16,7 +16,7 @@ def partitionGraveeURL(u):
 def partitionManuscriteURL(u):
     return f'<a href="../partitions/Manuscrit/{u}" target="_blank">PDF</a>'
 def extraitURL(u):
-    return f'<a href="../extraits/{u}" target="_blank">PDF</a>'
+    return f'<a href="../extraits/{u}" target="_blank">&#9835;</a>'
    
 
 #usecols à choisir parmi "n°opus" "titre" "nb de pages"	"Genre" "Instruments" "durée<br>en mn" 
