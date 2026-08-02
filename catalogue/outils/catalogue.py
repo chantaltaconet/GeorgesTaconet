@@ -8,16 +8,21 @@ options.language = {
     "url": "https://cdn.datatables.net/plug-ins/1.13.8/i18n/fr-FR.json"
 }
 csvfile="CatalogueGeorgesTaconet_pourJupyterBook.csv"
+usecols = ["n°opus","titre","Genre","Instruments","Extrait","Partition<br>éditée", "Partition<br>manuscrite","Année"]
+
 
 def partitionGraveeURL(u):
     return f'<a href="../partitions/GraveOuEdite/{u}" target="_blank">PDF</a>'
 def partitionManuscriteURL(u):
     return f'<a href="../partitions/Manuscrit/{u}" target="_blank">PDF</a>'
+def extraitURL(u):
+    return f'<a href="../extraits/{u}" target="_blank">PDF</a>'
+   
 
 #usecols à choisir parmi "n°opus" "titre" "nb de pages"	"Genre" "Instruments" "durée<br>en mn" 
 # "Poème de" "Poème" "Année" "Ref SACEM" "date SACEM" "note max" "Editeur" 
 #"Extrait" "Partition<br>éditée" "Partition<br>manuscrite" 
-def lire_formater_catalogue(usecols):
+def lire_formater_catalogue():
 	
   options.warn_on_undocumented_option = False
   # Charger le fichier CSV
@@ -27,6 +32,7 @@ def lire_formater_catalogue(usecols):
 
   df["Année"] = df["Année"].astype("Int64").astype(str).apply(lambda u:  '?' if pd.isna(u) else u)
   df["Partition<br>manuscrite"]=df["Partition<br>manuscrite"].apply(lambda u: '/' if pd.isna(u) else partitionManuscriteURL(u))
+  df["Extrait"]=df["Extrait"].apply(lambda u: '/' if pd.isna(u) else extraitURL(u))
 
 # html possible
   df.to_html(classes="table",escape=False, index=False)

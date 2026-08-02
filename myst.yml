@@ -8,6 +8,7 @@ project:
   title: Georges Taconet
   static_files:
     - catalogue/partitions
+    - catalogue/extraits
   # description:
   # keywords: []
   #authors: Henri Taconet 2005

@@ -15,8 +15,7 @@ from outils.catalogue import lire_formater_catalogue
 from outils.catalogue import filtrer_catalogue
 from outils.catalogue import afficher_catalogue
 
-usecols = ["n°opus","titre","Genre","Instruments","Partition<br>éditée", "Partition<br>manuscrite","Année"]
-df=lire_formater_catalogue(usecols)
+df=lire_formater_catalogue()
 df=filtrer_catalogue(df,"ensemble vocal")
 afficher_catalogue(df)
 ```
