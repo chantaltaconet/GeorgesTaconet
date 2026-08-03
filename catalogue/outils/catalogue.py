@@ -68,14 +68,17 @@ def filtrer_catalogue(df, filtre):
     case "piano":
       df = df[df["Instruments"]=="piano"]
       df = df.drop(columns=["Genre"])
+      df = df.drop(columns=["Poème"])
       return df
     case "orgue":
       df = df[df["Instruments"].str.contains("orgue")]
       df = df.drop(columns=["Genre"])
+      df = df.drop(columns=["Poème"])
       return df
     case "harmonium":
       df = df[df["Instruments"].str.contains("harmonium")]
       df = df.drop(columns=["Genre"])
+      df = df.drop(columns=["Poème"])
       return df
     case "musique de chambre":
       df = df[df["Genre"].str.contains("Musique de chambre|Orchestre",case=False,na=False)]
@@ -84,10 +87,12 @@ def filtrer_catalogue(df, filtre):
     case "violon":
       df = df[df["Instruments"].str.contains("violon|alto",case=False,na=False)]
       df = df.drop(columns=["Genre"])
+      df = df.drop(columns=["Poème"])
       return df
     case "violoncelle":
       df =  df[df["Instruments"].str.contains("violoncelle")]
       df = df.drop(columns=["Genre"])
+      df = df.drop(columns=["Poème"])
       return df
 
 # Paramètres pour le show
@@ -95,6 +100,11 @@ def filtrer_catalogue(df, filtre):
     # paging=False
 def afficher_catalogue(df):
   #df = df.reset_index(drop=True)
+  html = """
+  <div class="catalogue-wrapper">
+  """
+  display(HTML(html))
+
   show(df, searchable=True, sortable=True, allow_html=True,columnControl=["order", "colVisDropdown", "searchDropdown"])
   html = """
 <p><br><br>* Les partitions manuscrites ne portent pas de date, les dates mentionnées sont soit celles de dépôt à la SACEM, 
@@ -128,6 +138,7 @@ Henri Taconet
 </br>
 avril 1998-juin 200
 </p>
+</div>
 """
 
   display(HTML(html))

@@ -55,7 +55,7 @@ project:
            - file: musique/poemes/cloche.md
            - file: musique/poemes/colline.md
            - file: musique/poemes/decembre.md
-           - file: musique/poemes/doncesera.md
+           - file: musique/poemes/donccesera.md
            - file: musique/poemes/doucenuit.md
            - file: musique/poemes/elegie.md
            - file: musique/poemes/endeuil.md
@@ -117,3 +117,5 @@ site:
   options:
     logo: header2.png 
     style: _ressources/custom_creme3.css
+    language: fr
+

@@ -284,7 +284,7 @@ table.dataTable tbody td a {
 .bd-container__inner {
   max-width: 99% !important;
 }
-.bd-main .bd-content .bd-article-container {
+.bd-main .bd-content .bd-article-container {  
   max-width: 100em !important;
 }
 
@@ -298,5 +298,66 @@ html.dark {
     color: inherit !important;
 }
 
+/* uniquement les pages marquées class: wide-page */
 
+/* Page contenant le marqueur wide-page */
+.article:has(.wide-page) {
+    max-width: 100% !important;
+}
 
+/* Agrandir la zone article */
+.article:has(.wide-page) {
+    grid-column: 1 / -1;
+}
+
+/* Masquer la colonne de droite (TOC) */
+.article:has(.wide-page) .block {
+    display: none !important;
+}
+
+.wide-table {
+    width: 100vw;
+    margin-left: calc(-1 * var(--myst-margin-left));
+}
+
+.myst-jp-nb-block .myst-outputs,
+.myst-jp-nb-block [data-name="outputs-container"] {
+    width: 100%;
+    max-width: none;
+}
+
+.myst-jp-nb-block [data-name="outputs-container"] > div {
+    width: 100%;
+}
+
+.catalogue-wrapper {
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(50% - 50vw);
+}
+
+.catalogue-table {
+    width: 100%;
+}
+/* Autoriser les sorties de cellules Python à prendre toute la largeur */
+.article-grid .myst-jp-nb-block {
+    /*width: calc(100vw - 300px);*/
+    width: calc(100% + 300px);
+    max-width: none;
+}
+
+/* élargir le conteneur des sorties */
+.article-grid [data-name="outputs-container"] {
+    width: 100%;
+    max-width: none;
+}
+
+/* le tableau généré par pandas */
+.article-grid table {
+    width: 100% !important;
+}
+
+wide-table
+/*body {
+    border-top: 10px solid red !important;
+}*/

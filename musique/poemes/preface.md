@@ -26,7 +26,7 @@ Signalons que certains de ces poèmes ont inspiré d’autres musiciens :
 - E. Chausson (Dans la forêt chauve et rouillée, de Théophile Gautier)
 - Cl. Debussy (Rondel, de Charles d’Orléans)
 
-Je me fais un devoir et un plaisir de remercier ici Mme Mauricette Vinay. Fille de Blanche Vinay-Leconte, violoniste de grand talent, très appréciée de Georges Taconet, et elle même agrégée de lettres, elle m’a signalé et évité bien des fautes de frappe ou de prosodie. En outre elle a rédigé l’essentiel des deux pages qui suivent : [](poemes/situonslespoetes).
+Je me fais un devoir et un plaisir de remercier ici Mme Mauricette Vinay. Fille de Blanche Vinay-Leconte, violoniste de grand talent, très appréciée de Georges Taconet, et elle même agrégée de lettres, elle m’a signalé et évité bien des fautes de frappe ou de prosodie. En outre elle a rédigé l’essentiel de la page  [Situons les Poètes](situonslespoetes).
 
 
 

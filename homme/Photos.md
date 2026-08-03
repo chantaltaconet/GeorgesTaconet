@@ -17,6 +17,15 @@ Autour de 1900 : Jeune garçon, Georges Taconet pose avec ses  deux sœurs, Mari
 Vers 1910 : Jeune homme élégant, Georges Taconet pose chez un  photographe du Havre, Raoul Autin. Pianiste, il a déjà commencé à  composer.
 ```
 
+```{figure} photos/GeorgesYvonneJeunes.jpg
+:alt: 
+:width: 200px
+:align: left
+
+Vers 1910 : Georges Taconet et son épouse Yvonne 
+```
+
+
 ```{figure} photos/1912.jpg
 :alt: 
 :width: 200px
