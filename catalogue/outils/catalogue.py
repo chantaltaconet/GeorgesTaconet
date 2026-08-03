@@ -21,7 +21,7 @@ def partitionManuscriteURL(u):
 def extraitURL(u):
     return f'<a href="../extraits/{u}" target="_blank">&#9835;</a>'
 def poemeURL(u):
-    return f'<a href="/{u}" target="_blank">poème</a>'
+    return f'<a href="../{u}" target="_blank">poème</a>'
    
 
 def lire_formater_catalogue():
