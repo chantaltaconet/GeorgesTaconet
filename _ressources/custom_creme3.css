@@ -330,16 +330,8 @@ html.dark {
     width: 100%;
 }
 
-.catalogue-wrapper {
-    width: 100vw;
-    max-width: none;
-    margin-left: calc(50% - 50vw);
-}
 
-.catalogue-table {
-    width: 100%;
-}
-/* Autoriser les sorties de cellules Python à prendre toute la largeur */
+/* Autoriser les sorties de cellules Python à prendre toute la largeur pour les tableaux */
 .article-grid .myst-jp-nb-block {
     /*width: calc(100vw - 300px);*/
     width: calc(100% + 300px);
@@ -356,8 +348,14 @@ html.dark {
 .article-grid table {
     width: 100% !important;
 }
-
-wide-table
+myst-primary-sidebar-footer
+.myst-home-link-logo {
+    display: none !important;
+}
+/* Masquer le badge Made with MyST */
+a[href*="mystmd.org"] {
+    display: none !important;
+}
 /*body {
     border-top: 10px solid red !important;
 }*/
