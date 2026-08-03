@@ -1,6 +1,5 @@
 # Poèmes
 
-[](poemes/)
 ## Poèmes mis en musique par Georges Taconet 
 
 - [](poemes/preface)
@@ -32,7 +31,7 @@
 
 - [](poemes/goutesoirjuin)
 - [](poemes/abeille)
-- [](poemes/quantaumatin)
+- [](poemes/quandaumatin)
 - [](poemes/amourinegal)
 - [](poemes/tonimagepartout)
 - [](poemes/jeretrouveenrentrant)
