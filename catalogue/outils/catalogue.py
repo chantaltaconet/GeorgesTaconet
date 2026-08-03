@@ -64,6 +64,7 @@ def filtrer_catalogue(df, filtre):
     case "clavier":
       df = df[df["Instruments"].str.contains("piano|orgue|harmonium",case=False,na=False)]
       df = df.drop(columns=["Genre"])
+      df = df.drop(columns=["Poème"])
       return df
     case "piano":
       df = df[df["Instruments"]=="piano"]
