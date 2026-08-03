@@ -298,27 +298,7 @@ html.dark {
     color: inherit !important;
 }
 
-/* uniquement les pages marquées class: wide-page */
 
-/* Page contenant le marqueur wide-page */
-.article:has(.wide-page) {
-    max-width: 100% !important;
-}
-
-/* Agrandir la zone article */
-.article:has(.wide-page) {
-    grid-column: 1 / -1;
-}
-
-/* Masquer la colonne de droite (TOC) */
-.article:has(.wide-page) .block {
-    display: none !important;
-}
-
-.wide-table {
-    width: 100vw;
-    margin-left: calc(-1 * var(--myst-margin-left));
-}
 
 .myst-jp-nb-block .myst-outputs,
 .myst-jp-nb-block [data-name="outputs-container"] {
@@ -344,14 +324,7 @@ html.dark {
     max-width: none;
 }
 
-/* le tableau généré par pandas */
-.article-grid table {
-    width: 100% !important;
-}
-myst-primary-sidebar-footer
-.myst-home-link-logo {
-    display: none !important;
-}
+
 /* Masquer le badge Made with MyST */
 a[href*="mystmd.org"] {
     display: none !important;
