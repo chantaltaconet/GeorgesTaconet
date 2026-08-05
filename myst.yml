@@ -10,7 +10,7 @@ project:
   static_files:
     - catalogue/partitions
     - catalogue/extraits
-
+    - association
       # description:
   # keywords: []
   #authors: Henri Taconet 2005
