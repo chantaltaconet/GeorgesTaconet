@@ -6,7 +6,7 @@ jupyter:
     name: "python3"
 ---
 
-# Orchestre et musique de chambre
+# Œuvres pour violoncelle
 
 
 ```{code-cell} python
@@ -17,7 +17,7 @@ from outils.catalogue import afficher_catalogue
 from outils.catalogue import afficher_commentaire
 
 df=lire_formater_catalogue()
-df=filtrer_catalogue(df,"musique de chambre")
+df=filtrer_catalogue(df,"orchestre")
 afficher_catalogue(df)
 afficher_commentaire()
 ```
