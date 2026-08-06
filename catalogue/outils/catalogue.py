@@ -9,9 +9,9 @@ options.language = {
 }
 csvfile="CatalogueGeorgesTaconet_pourJupyterBook.csv"
 #usecols à choisir parmi "n°opus" "titre" "nb de pages"	"Genre" "Instruments" "durée<br>en mn" 
-# "Poème de" "Poème" "Année" "Ref SACEM" "date SACEM" "note max" "Editeur" 
+# "Poème de" "Poème<br>Texte" "Année" "Ref SACEM" "date SACEM" "note max" "Editeur" 
 #"Extrait" "Partition<br>éditée" "Partition<br>manuscrite" 
-usecols = ["n°opus","titre","Genre","Poème","Instruments","Extrait","Partition<br>éditée", "Partition<br>manuscrite","Année"]
+usecols = ["n°opus","titre","Genre","Poème<br>Texte","Instruments","Extrait","Partition<br>éditée", "Partition<br>manuscrite","Année"]
 
 
 def partitionGraveeURL(u):
@@ -21,7 +21,7 @@ def partitionManuscriteURL(u):
 def extraitURL(u):
     return f'<a href="../extraits/{u}" target="_blank"><b> <font size="+4">&#9836;</font></b></a>'
 def poemeURL(u):
-    return f'<a href="../{u}" target="_blank">poème</a>'
+    return f'<a href="../{u}" target="_blank">Texte</a>'
    
 
 def lire_formater_catalogue():
@@ -35,7 +35,7 @@ def lire_formater_catalogue():
   df["Année"] = df["Année"].astype("Int64").astype(str).apply(lambda u:  '?' if pd.isna(u) else u)
   df["Partition<br>manuscrite"]=df["Partition<br>manuscrite"].apply(lambda u: '/' if pd.isna(u) else partitionManuscriteURL(u))
   df["Extrait"]=df["Extrait"].apply(lambda u: '/' if pd.isna(u) else extraitURL(u))
-  df["Poème"]=df["Poème"].apply(lambda u: '/' if pd.isna(u) else poemeURL(u))
+  df["Poème<br>Texte"]=df["Poème<br>Texte"].apply(lambda u: '/' if pd.isna(u) else poemeURL(u))
 
 # html possible
   df.to_html(classes="table",escape=False, index=False)
@@ -64,22 +64,22 @@ def filtrer_catalogue(df, filtre):
     case "clavier":
       df = df[df["Instruments"].str.contains("piano|orgue|harmonium",case=False,na=False)]
       df = df.drop(columns=["Genre"])
-      df = df.drop(columns=["Poème"])
+      df = df.drop(columns=["Poème<br>Texte"])
       return df
     case "piano":
       df = df[df["Instruments"]=="piano"]
       df = df.drop(columns=["Genre"])
-      df = df.drop(columns=["Poème"])
+      df = df.drop(columns=["Poème<br>Texte"])
       return df
     case "orgue":
       df = df[df["Instruments"].str.contains("orgue")]
       df = df.drop(columns=["Genre"])
-      df = df.drop(columns=["Poème"])
+      df = df.drop(columns=["Poème<br>Texte"])
       return df
     case "harmonium":
       df = df[df["Instruments"].str.contains("harmonium")]
       df = df.drop(columns=["Genre"])
-      df = df.drop(columns=["Poème"])
+      df = df.drop(columns=["Poème<br>Texte"])
       return df
     case "musique de chambre":
       df = df[df["Genre"].str.contains("Musique de chambre|Orchestre",case=False,na=False)]
@@ -88,12 +88,12 @@ def filtrer_catalogue(df, filtre):
     case "violon":
       df = df[df["Instruments"].str.contains("violon|alto",case=False,na=False)]
       df = df.drop(columns=["Genre"])
-      df = df.drop(columns=["Poème"])
+      df = df.drop(columns=["Poème<br>Texte"])
       return df
     case "violoncelle":
       df =  df[df["Instruments"].str.contains("violoncelle")]
       df = df.drop(columns=["Genre"])
-      df = df.drop(columns=["Poème"])
+      df = df.drop(columns=["Poème<br>Texte"])
       return df
 
 # Paramètres pour le show

@@ -1,18 +1,19 @@
-"id","nom","url","categorie"
-"24","Espace musical et artistique de la Loingtaine","http://www.laloingtaine.org/index.php/fr/","Lieux de concert"
-"8","NAXOS","http://www.naxos.com","Éditeur de musique"
-"7","La Schola Cantorum","http://www.schola-cantorum.com/","École de musique "
-"25","Page facebook","https://www.facebook.com/AssociationLaMusiqueDeGeorgesTaconet/","Georges Taconet"
-"11","Jean Malandin organiste: page sur les compositeurs  havrais","http://jmalandin.free.fr/villes.htm#havre","Artistes ayant joué du Georges Taconet"
-"12","Classika","http://www.klassika.info/Komponisten/Taconet_Georges/","Critiques musicales"
-"13","Fanny Clamagirand, violoniste","http://www.clamagirand.com/","Artistes ayant joué du Georges Taconet"
-"15","Ville du Havre","http://www.ville-lehavre.fr/somm.htm","Région normandie"
-"16","Rob Barnet pour musicweb international","http://www.musicweb-international.com/classrev/2005/July05/Taconet_8225300.htm","Critiques musicales"
-"17","Musicalpointers","http://www.musicalpointers.co.uk/reviews/cddvd/KlebeTaconetVln.htm","Critiques musicales"
-"18","Castle classics","http://shop.castleclassics.co.uk/acatalog/Taconet__Georges__French_1889_1962_.html","Critiques musicales"
-"19","Ville de Sainte Adresse","http://www.ville-sainte-adresse.fr/","Région normandie"
-"20","Catherine Buttgen, artiste lyrique soprano","http://pagespro-orange.fr/paris.musique/","Artistes ayant joué du Georges Taconet"
-"21"," Mel Bonis, compositrice française 1858-1937","http://www.mel-bonis.com/","Compositeurs"
-"22","André Caplet, musicien havrais, relation de Georges Taconet","http://www.andre-caplet.fr/","Compositeurs"
-"23","Centre International de la Mélodie Française","http://www.melodiefrancaise.com","Mélodies françaises"
-"26","Wikipedia","https://fr.wikipedia.org/wiki/Georges_Taconet","Georges Taconet"
+nom,url,categorie
+Espace musical et artistique de la Loingtaine,http://www.laloingtaine.org/index.php/fr/,Lieux de concert
+NAXOS,http://www.naxos.com,Éditeur de musique
+La Schola Cantorum,http://www.schola-cantorum.com/,École de musique 
+Page facebook,https://www.facebook.com/AssociationLaMusiqueDeGeorgesTaconet/,Georges Taconet
+Jean Malandin organiste: page sur les compositeurs  havrais,http://jmalandin.free.fr/villes.htm#havre,Artistes ayant joué du Georges Taconet
+Classika,http://www.klassika.info/Komponisten/Taconet_Georges/,Critiques musicales
+"Fanny Clamagirand, violoniste",http://www.clamagirand.com/,Artistes ayant joué du Georges Taconet
+Ville du Havre,http://www.ville-lehavre.fr/somm.htm,Région normandie
+Rob Barnet pour musicweb international,http://www.musicweb-international.com/classrev/2005/July05/Taconet_8225300.htm,Critiques musicales
+Musicalpointers,http://www.musicalpointers.co.uk/reviews/cddvd/KlebeTaconetVln.htm,Critiques musicales
+Castle classics,http://shop.castleclassics.co.uk/acatalog/Taconet__Georges__French_1889_1962_.html,Critiques musicales
+Ville de Sainte Adresse,http://www.ville-sainte-adresse.fr/,Région normandie
+"Catherine Buttgen, artiste lyrique soprano",http://pagespro-orange.fr/paris.musique/,Artistes ayant joué du Georges Taconet
+" Mel Bonis, compositrice française 1858-1937",http://www.mel-bonis.com/,Compositeurs
+"André Caplet, musicien havrais, relation de Georges Taconet",http://www.andre-caplet.fr/,Compositeurs
+Centre International de la Mélodie Française,http://www.melodiefrancaise.com,Mélodies françaises
+Wikipedia,https://fr.wikipedia.org/wiki/Georges_Taconet,Georges Taconet
+Académie Francis Poulenc,https://www.academiefrancispoulenc.com/,Mélodies françaises
