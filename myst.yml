@@ -40,7 +40,7 @@ project:
       children:
         - file: musique/ContexteMusical.md
         - file: musique/StyleMusical.md
-        - file: musique/ExtraitsMusicaux.md
+        - file: catalogue/ExtraitsMusicaux.md
         - file: musique/Poemes.md
           children:
            - file: musique/poemes/abeille.md

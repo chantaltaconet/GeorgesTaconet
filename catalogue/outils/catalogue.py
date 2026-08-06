@@ -12,7 +12,7 @@ csvfile="CatalogueGeorgesTaconet_pourJupyterBook.csv"
 # "Poème de" "Poème<br>Texte" "Année" "Ref SACEM" "date SACEM" "note max" "Editeur" 
 #"Extrait" "Partition<br>éditée" "Partition<br>manuscrite" 
 usecols = ["n°opus","titre","Genre","Poème<br>Texte","Instruments","Extrait","Partition<br>éditée", "Partition<br>manuscrite","Année"]
-
+symboleextrait="&#9836;"
 
 def partitionGraveeURL(u):
     return f'<a href="../partitions/GraveOuEdite/{u}" target="_blank">PDF</a>'
@@ -95,6 +95,15 @@ def filtrer_catalogue(df, filtre):
       df = df.drop(columns=["Genre"])
       df = df.drop(columns=["Poème<br>Texte"])
       return df
+    case "extraits":
+      df = df[df["Extrait"].str.contains(symboleextrait)]
+      df = df.drop(columns=["Genre"])
+      df = df.drop(columns=["Partition<br>éditée"])
+      df = df.drop(columns=["Partition<br>manuscrite"])
+      df = df.drop(columns=["Année"])
+      df = df.drop(columns=["Poème<br>Texte"])
+      return df
+
 
 # Paramètres pour le show
     # columnControl=["order", "colVisDropdown", "searchDropdown"],
@@ -103,6 +112,8 @@ def afficher_catalogue(df):
   #df = df.reset_index(drop=True)
 
   show(df, searchable=True, sortable=True, allow_html=True,columnControl=["order", "colVisDropdown", "searchDropdown"])
+
+def afficher_commentaire():  
   html = """
 <p><br><br>* Les partitions manuscrites ne portent pas de date, les dates mentionnées sont soit celles de dépôt à la SACEM, 
 pour les oeuvres déposées à la SACEM, soit viennent de la mention de l'oeuvre dans une correspondance.</p>

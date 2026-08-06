@@ -14,8 +14,11 @@ jupyter:
 from outils.catalogue import lire_formater_catalogue
 from outils.catalogue import filtrer_catalogue
 from outils.catalogue import afficher_catalogue
+from outils.catalogue import afficher_commentaire
+
 
 df=lire_formater_catalogue()
 df=filtrer_catalogue(df,"clavier")
 afficher_catalogue(df)
+afficher_commentaire()
 ```
