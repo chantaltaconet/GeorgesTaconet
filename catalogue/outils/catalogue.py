@@ -107,11 +107,8 @@ def afficher_catalogue(df):
 <p><br><br>* Les partitions manuscrites ne portent pas de date, les dates mentionnées sont soit celles de dépôt à la SACEM, 
 pour les oeuvres déposées à la SACEM, soit viennent de la mention de l'oeuvre dans une correspondance.</p>
 
-<p>
-Henri Taconet
-</br>
-avril 1998-juin 200
-</p>
+
+<blockquote>
 <p><i>J'ai rassemblé ici les poèmes mis en musique par Georges TACONET. 
 Ils sont présentés dans l'ordre du catalogue, c'est à dire suivant l'ordre alphabétique des poè­tes. 
 Il eut été intéressant de connaître la date de composi­tion de chacun d'eux, 
@@ -120,6 +117,7 @@ Nous n'avons pas ces dates, mais nous avons quelques indications sur certaines �
 en tenant compte de la date d'une pre­mière audition, de la date d'inscription à la SACEM, 
 ou même de l'écriture du manuscrit.</i>
 </p>
+</blockquote> - Henri Taconet Juin 2000
 """
 
   display(HTML(html))
