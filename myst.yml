@@ -7,6 +7,7 @@ project:
   id: e2becd5f-0c7f-4ea0-9117-658cc62194dd
   title: Georges Taconet
   authors: Georges Taconet
+  description: Georges Taconet compositeur de musique classique du Havre Saint Adresse, mélodies, sonates, quintette, orchestration, partitions
   static_files:
     - catalogue/partitions
     - catalogue/extraits

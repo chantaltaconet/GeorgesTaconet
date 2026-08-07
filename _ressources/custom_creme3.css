@@ -329,6 +329,15 @@ html.dark {
 a[href*="mystmd.org"] {
     display: none !important;
 }
+button[aria-label*="theme"],
+button[aria-label*="Theme"] {
+    display: none !important;
+}
+
+button[title*="theme"],
+button[title*="Theme"] {
+    display: none !important;
+}
 /*body {
     border-top: 10px solid red !important;
 }*/
