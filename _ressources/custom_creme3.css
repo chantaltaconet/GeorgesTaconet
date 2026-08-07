@@ -195,6 +195,30 @@ table.dataTable thead th {
     /*transform: scale(1.25);*/
     opacity: 0.9;
 }
+/* =====================================================
+   TABLEAUX ITABLES / DATATABLES
+   Agrandir les icônes du header
+   ===================================================== */
+
+/* Zone des titres de colonnes */
+table.dataTable thead th {
+    position: relative;
+    padding: 14px 12px !important;
+    font-size: 0.8rem !important;
+    text-align: center !important;
+}
+
+
+/* Boutons de contrôle */
+.dt-column-order,
+.dt-column-search,
+.dt-column-visibility,
+.dt-button {
+    font-size: 1rem !important;
+    color: #000 !important;      /* mode clair */
+    fill: #000 !important;       /* si SVG */
+    opacity: 1 !important;
+}
 
 
 /* Les petits chevrons de tri */
@@ -337,6 +361,69 @@ button[aria-label*="Theme"] {
 button[title*="theme"],
 button[title*="Theme"] {
     display: none !important;
+}
+
+/* Icônes ColumnControl */
+.dtcc-button,
+.dtcc-button-icon {
+    color: #1f3f82 !important;   /* ou #000 si tu préfères */
+    opacity: 1 !important;
+}
+
+/* Le SVG hérite de la couleur */
+.dtcc-button-icon svg {
+    color: inherit !important;
+}
+
+/* =====================================================
+   ITABLES / DATATABLES COLUMN CONTROL
+   Couleur des icônes (order, search, colVis)
+   ===================================================== */
+
+table.dataTable span.dtcc button.dtcc-button {
+    color: #1f3f82 !important;   /* bleu foncé comme tes flèches de tri */
+    opacity: 1 !important;
+}
+
+table.dataTable span.dtcc button.dtcc-button svg {
+    stroke: currentColor !important;
+}
+
+/* Agrandir les icônes ColumnControl */
+table.dataTable span.dtcc-button-icon svg {
+    width: 14px !important;
+    height: 14px !important;
+}
+
+table.dataTable span.dtcc button.dtcc-button {
+    min-width: 26px !important;
+    min-height: 26px !important;
+    padding: 4px !important;
+}
+
+/* Remplacer l'icône Order (losange) par une flèche de tri */
+.dtcc-button_order .dtcc-button-icon svg {
+    display: none !important;
+}
+
+.dtcc-button_order .dtcc-button-icon::after {
+    content: "↕";
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: inherit;
+}
+/* Masquer uniquement le bouton d'ordre (losange) */
+/*table.dataTable span.dtcc .dtcc-button_order {
+    display: none !important;
+}*/
+
+/* Masquer l'indicateur de tri natif DataTables */
+table.dataTable span.dt-column-order {
+    display: none !important;
+}
+.dtcc-button_order .dtcc-button-icon::after {
+    content: "⇅";
+    font-size: 1.4rem;
 }
 /*body {
     border-top: 10px solid red !important;

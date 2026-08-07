@@ -3,6 +3,7 @@ from IPython.display import HTML, display
 from itables import show
 from itables import options
 from IPython.display import display, HTML
+from IPython.display import Javascript
 
 options.language = {
     "url": "https://cdn.datatables.net/plug-ins/1.13.8/i18n/fr-FR.json"
@@ -116,6 +117,9 @@ def afficher_catalogue(df):
   #df = df.reset_index(drop=True)
 
   show(df, searchable=True, sortable=True, allow_html=True,columnControl=["order", "colVisDropdown", "searchDropdown"])
+
+
+
 
 def afficher_commentaire():  
   html = """
