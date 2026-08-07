@@ -425,6 +425,45 @@ table.dataTable span.dt-column-order {
     content: "⇅";
     font-size: 1.4rem;
 }
+
+/* =====================================================
+   ITABLES / DATATABLES COLUMN CONTROL
+   Infobulles au survol
+   ===================================================== */
+
+.dtcc-button {
+    position: relative;
+}
+
+/* Style commun des infobulles */
+.dtcc-button:hover::after {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    z-index: 9999;
+}
+
+/* Tri */
+.dtcc-button_order:hover::after {
+    content: "Tri de la colonne";
+}
+
+/* Recherche */
+.dtcc-button_dropdown[aria-label="Search"]:hover::after {
+    content: "Recherche dans la colonne";
+}
+
+/* Visibilité */
+.dtcc-button_dropdown[aria-label="Column visibility"]:hover::after {
+    content: "Afficher / masquer les colonnes";
+}
 /*body {
     border-top: 10px solid red !important;
 }*/
