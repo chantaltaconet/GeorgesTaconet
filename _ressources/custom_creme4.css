@@ -1,0 +1,483 @@
+/* ===============================
+   THEME GENERAL CREME
+   =============================== */
+
+:root {
+  --fond-creme: #f7f1e5;
+  --header-creme: #eee3cc;
+  --bleu-titre: #243b7a;
+  --bleu-table-header: #aab6d5;
+  --bleu-table-header2: #c4cce0;
+  --texte: #222;
+}
+
+
+/* Fond général */
+body {
+  background-color: var(--fond-creme) !important;
+  color: var(--texte);
+}
+
+
+/* ===============================
+   HEADER PRINCIPAL
+   =============================== */
+
+.myst-top-nav {
+  background-color: #f1e8d5 !important;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0,0,0,.12);
+}
+
+
+/* Logo */
+.myst-home-link-logo img {
+  opacity: .95;
+}
+
+
+/* ===============================
+   TITRES
+   =============================== */
+
+h1,
+.myst-fm-block-title {
+  color: var(--bleu-titre) !important;
+}
+
+
+/* ===============================
+   COLONNE GAUCHE TOC
+   =============================== */
+
+.myst-primary-sidebar {
+  width: 230px !important;
+}
+
+
+.myst-primary-sidebar-toc {
+  background: transparent;
+}
+
+
+.myst-toc-item {
+  color: #20356f !important;
+}
+
+
+.myst-toc-item-exact {
+  background: #d9e2f3 !important;
+}
+
+
+
+
+/* ===============================
+   TABLE ITABLES / DATATABLES
+   =============================== */
+
+
+/* conteneur */
+.dataTables_wrapper {
+  width:100% !important;
+}
+
+
+/* table */
+table.dataTable {
+  width:100% !important;
+  margin:auto !important;
+  border-collapse:collapse !important;
+}
+
+
+/* cellules */
+table.dataTable tbody td {
+  text-align:center !important;
+  vertical-align:middle !important;
+  color:#25346d !important;
+}
+
+
+/* liens PDF */
+table.dataTable tbody a {
+  color:#244f9b !important;
+  font-weight:600;
+}
+
+
+/* ===============================
+   HEADER DES COLONNES
+   =============================== */
+
+
+/* première ligne itables */
+table.dataTable thead tr:first-child th {
+  background:#aab6d5 !important;
+  color:#24356d !important;
+  text-align:center !important;
+  font-weight:700;
+}
+
+
+/* seconde ligne */
+table.dataTable thead tr:nth-child(2) th {
+  background:#c4cce0 !important;
+  color:#24356d !important;
+  text-align:center !important;
+}
+
+
+
+/* ===============================
+   BOUTONS DATATABLES VISIBLES
+   =============================== */
+
+
+/* icônes tri */
+table.dataTable thead .dt-column-order,
+table.dataTable thead .dt-column-order:before,
+table.dataTable thead .dt-column-order:after {
+  opacity:1 !important;
+  color:#24356d !important;
+}
+
+
+/* boutons colonne */
+.dt-button,
+.dt-column-title,
+.dt-input,
+.dt-search input {
+  color:#24356d !important;
+}
+
+
+/* petits symboles */
+.dt-column-order {
+  filter:none !important;
+}
+
+
+/* recherche */
+.dt-search input {
+  background:#fffaf0 !important;
+  border:1px solid #b7a98c !important;
+}
+
+
+/* =====================================================
+   TABLEAUX ITABLES / DATATABLES
+   Agrandir les icônes du header
+   ===================================================== */
+
+/* Zone des titres de colonnes */
+table.dataTable thead th {
+    position: relative;
+    padding: 14px 12px !important;
+    font-size: 0.8rem !important;
+    text-align: center !important;
+}
+
+/* Boutons de contrôle des colonnes */
+.dt-column-order,
+.dt-column-search,
+.dt-column-visibility,
+.dt-button {
+    font-size: 1rem !important;
+    /*transform: scale(1.25);*/
+    opacity: 0.9;
+}
+/* =====================================================
+   TABLEAUX ITABLES / DATATABLES
+   Agrandir les icônes du header
+   ===================================================== */
+
+/* Zone des titres de colonnes */
+table.dataTable thead th {
+    position: relative;
+    padding: 14px 12px !important;
+    font-size: 0.8rem !important;
+    text-align: center !important;
+}
+
+
+/* Boutons de contrôle */
+.dt-column-order,
+.dt-column-search,
+.dt-column-visibility,
+.dt-button {
+    font-size: 1rem !important;
+    color: #000 !important;      /* mode clair */
+    fill: #000 !important;       /* si SVG */
+    opacity: 1 !important;
+}
+
+
+/* Les petits chevrons de tri */
+table.dataTable thead .dt-column-order::before,
+table.dataTable thead .dt-column-order::after {
+    font-size: 1.1rem !important;
+}
+
+
+/* Les icônes dans le menu de visibilité */
+.dt-button span,
+.dt-button i {
+    font-size: 1.1rem !important;
+}
+
+
+/* Espacement entre les icônes et le texte */
+.dt-column-title {
+    padding-right: 8px;
+}
+
+
+
+
+/* Header du tableau */
+table.dataTable thead tr {
+    background-color: #b7bfdc !important;
+}
+
+
+
+/* Corps du tableau centré */
+table.dataTable tbody td {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+
+/* Première colonne titre éventuellement plus lisible */
+table.dataTable tbody td:first-child {
+    text-align: center !important;
+}
+
+
+/* Liens PDF */
+table.dataTable tbody td a {
+    color: #243b8f !important;
+    font-weight: 600;
+}
+
+
+
+
+/* Header général encore un peu plus clair */
+.myst-top-nav {
+    background-color: #f4ecd8 !important;
+}
+
+
+
+/* =====================================
+   Logo plus grand dans la barre du haut
+   ===================================== */
+
+.myst-home-link-logo img {
+    height: 70px !important;
+    width: auto !important;
+    max-height: none !important;
+}
+
+
+/* Augmenter légèrement la hauteur de la barre */
+.myst-top-nav {
+    min-height: 80px !important;
+}
+
+
+/* Centrer verticalement le logo */
+.myst-home-link-logo {
+    display: flex;
+    align-items: center;
+}
+
+.bd-container {
+  max-width: 99% !important;
+}
+.bd-container__inner {
+  max-width: 99% !important;
+}
+.bd-main .bd-content .bd-article-container {  
+  max-width: 100em !important;
+}
+
+/* =====================================================
+   FORCER LE THÈME CLAIR
+   ===================================================== */
+
+/* =====================================================
+même dark c'est sombre'
+   ===================================================== */
+
+:root,
+html.dark {
+  --fond-creme: #f7f1e5;
+  --header-creme: #eee3cc;
+  --bleu-titre: #243b7a;
+  --bleu-table-header: #aab6d5;
+  --bleu-table-header2: #c4cce0;
+  --texte: #222;
+}
+
+
+/* =====================================================
+   FORCER LE THÈME CLAIR
+   ===================================================== */
+
+html,
+html.dark {
+    color-scheme: light !important;
+}
+
+html.dark body {
+    background-color: var(--fond-creme) !important;
+    color: var(--texte) !important;
+}
+
+
+.myst-jp-nb-block .myst-outputs,
+.myst-jp-nb-block [data-name="outputs-container"] {
+    width: 100%;
+    max-width: none;
+}
+
+.myst-jp-nb-block [data-name="outputs-container"] > div {
+    width: 100%;
+}
+
+
+/* Autoriser les sorties de cellules Python à prendre toute la largeur pour les tableaux */
+.article-grid .myst-jp-nb-block {
+    /*width: calc(100vw - 300px);*/
+    width: calc(100% + 300px);
+    max-width: none;
+}
+
+/* élargir le conteneur des sorties */
+.article-grid [data-name="outputs-container"] {
+    width: 100%;
+    max-width: none;
+}
+
+
+/* Masquer le badge Made with MyST */
+a[href*="mystmd.org"] {
+    display: none !important;
+}
+button[aria-label*="theme"],
+button[aria-label*="Theme"] {
+    display: none !important;
+}
+
+button[title*="theme"],
+button[title*="Theme"] {
+    display: none !important;
+}
+
+/* Icônes ColumnControl */
+.dtcc-button,
+.dtcc-button-icon {
+    color: #1f3f82 !important;   /* ou #000 si tu préfères */
+    opacity: 1 !important;
+}
+
+/* Le SVG hérite de la couleur */
+.dtcc-button-icon svg {
+    color: inherit !important;
+}
+
+/* =====================================================
+   ITABLES / DATATABLES COLUMN CONTROL
+   Couleur des icônes (order, search, colVis)
+   ===================================================== */
+
+table.dataTable span.dtcc button.dtcc-button {
+    color: #1f3f82 !important;   /* bleu foncé comme tes flèches de tri */
+    opacity: 1 !important;
+}
+
+table.dataTable span.dtcc button.dtcc-button svg {
+    stroke: currentColor !important;
+}
+
+/* Agrandir les icônes ColumnControl */
+table.dataTable span.dtcc-button-icon svg {
+    width: 14px !important;
+    height: 14px !important;
+}
+
+table.dataTable span.dtcc button.dtcc-button {
+    min-width: 26px !important;
+    min-height: 26px !important;
+    padding: 4px !important;
+}
+
+/* Remplacer l'icône Order (losange) par une flèche de tri */
+.dtcc-button_order .dtcc-button-icon svg {
+    display: none !important;
+}
+
+.dtcc-button_order .dtcc-button-icon::after {
+    content: "↕";
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: inherit;
+}
+/* Masquer uniquement le bouton d'ordre (losange) */
+/*table.dataTable span.dtcc .dtcc-button_order {
+    display: none !important;
+}*/
+
+/* Masquer l'indicateur de tri natif DataTables */
+table.dataTable span.dt-column-order {
+    display: none !important;
+}
+.dtcc-button_order .dtcc-button-icon::after {
+    content: "⇅";
+    font-size: 1.4rem;
+}
+
+/* =====================================================
+   ITABLES / DATATABLES COLUMN CONTROL
+   Infobulles au survol
+   ===================================================== */
+
+.dtcc-button {
+    position: relative;
+}
+
+/* Style commun des infobulles */
+.dtcc-button:hover::after {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    z-index: 9999;
+}
+
+/* Tri */
+.dtcc-button_order:hover::after {
+    content: "Tri de la colonne";
+}
+
+/* Recherche */
+.dtcc-button_dropdown[aria-label="Search"]:hover::after {
+    content: "Recherche dans la colonne";
+}
+
+/* Visibilité */
+.dtcc-button_dropdown[aria-label="Column visibility"]:hover::after {
+    content: "Afficher / masquer les colonnes";
+}
+/*body {
+    border-top: 10px solid red !important;
+}*/

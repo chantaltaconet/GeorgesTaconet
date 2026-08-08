@@ -179,6 +179,6 @@ site:
   options:
     logo: header2.png 
     favicon: header2.png
-    style: _ressources/custom_creme3.css
+    style: _ressources/custom_creme4.css
     language: fr
 
