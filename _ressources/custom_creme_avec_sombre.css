@@ -1,0 +1,663 @@
+/* ============================================================
+   JUPYTERBOOK / MYST
+   THEME CLAIR + VRAI THEME SOMBRE
+   ============================================================ */
+
+
+/* ============================================================
+   1. VARIABLES — MODE CLAIR
+   ============================================================ */
+
+:root {
+  color-scheme: light;
+
+  /* Fond général */
+  --fond: #f7f1e5;
+  --fond-secondaire: #eee3cc;
+  --fond-surface: #fffaf0;
+  --fond-hover: #eee6d5;
+
+  /* Texte */
+  --texte: #222222;
+  --texte-secondaire: #555555;
+
+  /* Titres / liens */
+  --bleu-titre: #243b7a;
+  --bleu-lien: #244f9b;
+
+  /* Tableaux */
+  --table-fond: #fffaf0;
+  --table-fond-alt: #f3eee3;
+  --table-hover: #e8e1d2;
+
+  --table-header-1: #aab6d5;
+  --table-header-2: #c4cce0;
+  --table-header-texte: #24356d;
+
+  /* Bordures */
+  --bordure: #b7a98c;
+
+  /* Icônes */
+  --icone: #243b7a;
+
+  /* Champs */
+  --input-fond: #fffaf0;
+  --input-texte: #222222;
+  --input-bordure: #b7a98c;
+
+  /* Infobulles */
+  --tooltip-fond: #333333;
+  --tooltip-texte: #ffffff;
+}
+
+
+/* ============================================================
+   2. VARIABLES — MODE SOMBRE
+   MyST utilise html.dark
+   ============================================================ */
+
+html.dark {
+  color-scheme: dark;
+
+  /* Fond général */
+  --fond: #151922;
+  --fond-secondaire: #1d222c;
+  --fond-surface: #222833;
+  --fond-hover: #2c3441;
+
+  /* Texte */
+  --texte: #e7e9ee;
+  --texte-secondaire: #b8bec9;
+
+  /* Titres / liens */
+  --bleu-titre: #b8c7f2;
+  --bleu-lien: #91b5ff;
+
+  /* Tableaux */
+  --table-fond: #202630;
+  --table-fond-alt: #252c37;
+  --table-hover: #303947;
+
+  --table-header-1: #354566;
+  --table-header-2: #435273;
+  --table-header-texte: #f0f3ff;
+
+  /* Bordures */
+  --bordure: #4d5868;
+
+  /* Icônes */
+  --icone: #d9e2ff;
+
+  /* Champs */
+  --input-fond: #252b35;
+  --input-texte: #e7e9ee;
+  --input-bordure: #596577;
+
+  /* Infobulles */
+  --tooltip-fond: #e8ebf2;
+  --tooltip-texte: #151922;
+}
+
+
+/* ============================================================
+   3. FOND GENERAL
+   ============================================================ */
+
+html,
+body {
+  background-color: var(--fond) !important;
+  color: var(--texte) !important;
+}
+
+
+/* ============================================================
+   4. HEADER PRINCIPAL
+   ============================================================ */
+
+.myst-top-nav {
+  background-color: var(--fond-secondaire) !important;
+
+  backdrop-filter: blur(8px);
+
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, .12);
+
+  min-height: 80px !important;
+}
+
+
+/* ============================================================
+   5. LOGO
+   ============================================================ */
+
+.myst-home-link-logo {
+  display: flex;
+  align-items: center;
+}
+
+.myst-home-link-logo img {
+  height: 70px !important;
+  width: auto !important;
+  max-height: none !important;
+  opacity: .95;
+}
+
+
+/* ============================================================
+   6. TITRES
+   ============================================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.myst-fm-block-title {
+  color: var(--bleu-titre) !important;
+}
+
+
+/* ============================================================
+   7. LIENS
+   ============================================================ */
+
+a {
+  color: var(--bleu-lien);
+}
+
+a:hover {
+  color: var(--bleu-titre);
+}
+
+
+/* ============================================================
+   8. COLONNE GAUCHE / TABLE DES MATIERES
+   ============================================================ */
+
+.myst-primary-sidebar {
+  width: 230px !important;
+}
+
+.myst-primary-sidebar-toc {
+  background: transparent;
+}
+
+.myst-toc-item {
+  color: var(--texte) !important;
+}
+
+.myst-toc-item-exact {
+  background-color: var(--fond-hover) !important;
+  color: var(--bleu-titre) !important;
+}
+
+
+/* ============================================================
+   9. TABLEAUX DATATABLES / ITABLES
+   ============================================================ */
+
+
+/* Conteneur */
+
+.dataTables_wrapper {
+  width: 100% !important;
+  color: var(--texte) !important;
+}
+
+
+/* Table */
+
+table.dataTable {
+  width: 100% !important;
+  margin: auto !important;
+
+  border-collapse: collapse !important;
+
+  background-color: var(--table-fond) !important;
+  color: var(--texte) !important;
+}
+
+
+/* ============================================================
+   10. CELLULES
+   ============================================================ */
+
+table.dataTable th,
+table.dataTable td {
+  border-color: var(--bordure) !important;
+}
+
+
+/* Corps du tableau */
+
+table.dataTable tbody td {
+  text-align: center !important;
+  vertical-align: middle !important;
+
+  color: var(--texte) !important;
+
+  background-color: var(--table-fond) !important;
+}
+
+
+/* Première colonne */
+
+table.dataTable tbody td:first-child {
+  text-align: center !important;
+}
+
+
+/* ============================================================
+   11. LIGNES ALTERNÉES
+   ============================================================ */
+
+table.dataTable tbody tr:nth-child(even) td {
+  background-color: var(--table-fond-alt) !important;
+}
+
+
+/* ============================================================
+   12. SURVOL DES LIGNES
+   ============================================================ */
+
+table.dataTable tbody tr:hover td {
+  background-color: var(--table-hover) !important;
+}
+
+
+/* ============================================================
+   13. LIENS PDF / LIENS DANS TABLEAUX
+   ============================================================ */
+
+table.dataTable tbody a,
+table.dataTable tbody td a {
+  color: var(--bleu-lien) !important;
+
+  font-weight: 600;
+}
+
+table.dataTable tbody a:hover {
+  color: var(--bleu-titre) !important;
+}
+
+
+/* ============================================================
+   14. HEADER DES TABLEAUX
+   ============================================================ */
+
+table.dataTable thead tr {
+  background-color: var(--table-header-1) !important;
+}
+
+
+/* Première ligne */
+
+table.dataTable thead tr:first-child th {
+  background-color: var(--table-header-1) !important;
+
+  color: var(--table-header-texte) !important;
+
+  text-align: center !important;
+
+  font-weight: 700;
+}
+
+
+/* Deuxième ligne */
+
+table.dataTable thead tr:nth-child(2) th {
+  background-color: var(--table-header-2) !important;
+
+  color: var(--table-header-texte) !important;
+
+  text-align: center !important;
+
+  font-weight: 700;
+}
+
+
+/* Cellules header */
+
+table.dataTable thead th {
+  position: relative;
+
+  padding: 14px 12px !important;
+
+  font-size: .8rem !important;
+
+  text-align: center !important;
+
+  border-color: var(--bordure) !important;
+}
+
+
+/* ============================================================
+   15. ICÔNES DE TRI DATATABLES
+   ============================================================ */
+
+table.dataTable thead .dt-column-order,
+table.dataTable thead .dt-column-order::before,
+table.dataTable thead .dt-column-order::after {
+  opacity: 1 !important;
+
+  color: var(--icone) !important;
+}
+
+
+/* Taille */
+
+table.dataTable thead .dt-column-order::before,
+table.dataTable thead .dt-column-order::after {
+  font-size: 1.1rem !important;
+}
+
+
+/* ============================================================
+   16. BOUTONS DATATABLES
+   ============================================================ */
+
+.dt-button {
+  background-color: var(--fond-surface) !important;
+
+  color: var(--texte) !important;
+
+  border: 1px solid var(--bordure) !important;
+
+  opacity: 1 !important;
+}
+
+.dt-button:hover {
+  background-color: var(--fond-hover) !important;
+
+  color: var(--texte) !important;
+}
+
+
+/* Texte / icônes */
+
+.dt-button span,
+.dt-button i {
+  color: var(--icone) !important;
+
+  font-size: 1.1rem !important;
+}
+
+
+/* ============================================================
+   17. CONTRÔLES DE COLONNES
+   ============================================================ */
+
+.dt-column-order,
+.dt-column-search,
+.dt-column-visibility,
+.dt-button {
+  font-size: 1rem !important;
+
+  color: var(--icone) !important;
+
+  fill: var(--icone) !important;
+
+  opacity: 1 !important;
+}
+
+
+/* ============================================================
+   18. RECHERCHE DATATABLES
+   ============================================================ */
+
+.dt-search input,
+.dt-input {
+  background-color: var(--input-fond) !important;
+
+  color: var(--input-texte) !important;
+
+  border: 1px solid var(--input-bordure) !important;
+}
+
+.dt-search input::placeholder {
+  color: var(--texte-secondaire) !important;
+}
+
+
+/* ============================================================
+   19. PAGINATION
+   ============================================================ */
+
+.dataTables_wrapper .dt-paging button {
+  background-color: var(--fond-surface) !important;
+
+  color: var(--texte) !important;
+
+  border-color: var(--bordure) !important;
+}
+
+.dataTables_wrapper .dt-paging button:hover {
+  background-color: var(--fond-hover) !important;
+
+  color: var(--texte) !important;
+}
+
+.dataTables_wrapper .dt-paging button.current {
+  background-color: var(--table-header-1) !important;
+
+  color: var(--table-header-texte) !important;
+}
+
+
+/* ============================================================
+   20. COLUMN CONTROL — ITABLES
+   ============================================================ */
+
+.dtcc-button,
+.dtcc-button-icon {
+  color: var(--icone) !important;
+
+  opacity: 1 !important;
+}
+
+
+/* Bouton */
+
+.dtcc-button {
+  background-color: transparent !important;
+}
+
+
+/* Survol */
+
+.dtcc-button:hover {
+  background-color: var(--fond-hover) !important;
+}
+
+
+/* SVG */
+
+.dtcc-button-icon svg,
+table.dataTable span.dtcc button.dtcc-button svg {
+  color: currentColor !important;
+
+  stroke: currentColor !important;
+
+  fill: currentColor !important;
+}
+
+
+/* ============================================================
+   21. TAILLE DES ICÔNES COLUMN CONTROL
+   ============================================================ */
+
+table.dataTable span.dtcc-button-icon svg {
+  width: 14px !important;
+  height: 14px !important;
+}
+
+table.dataTable span.dtcc button.dtcc-button {
+  min-width: 26px !important;
+  min-height: 26px !important;
+
+  padding: 4px !important;
+}
+
+
+/* ============================================================
+   22. REMPLACEMENT DE L'ICÔNE ORDER
+   ============================================================ */
+
+.dtcc-button_order .dtcc-button-icon svg {
+  display: none !important;
+}
+
+.dtcc-button_order .dtcc-button-icon::after {
+  content: "⇅";
+
+  font-size: 1.4rem;
+
+  font-weight: bold;
+
+  color: inherit;
+}
+
+
+/* Masquer l'indicateur natif DataTables */
+
+table.dataTable span.dt-column-order {
+  display: none !important;
+}
+
+
+/* ============================================================
+   23. INFOS-BULLES COLUMN CONTROL
+   ============================================================ */
+
+.dtcc-button {
+  position: relative;
+}
+
+.dtcc-button:hover::after {
+  position: absolute;
+
+  top: 35px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background-color: var(--tooltip-fond);
+
+  color: var(--tooltip-texte);
+
+  padding: 5px 8px;
+
+  border-radius: 4px;
+
+  font-size: .75rem;
+
+  white-space: nowrap;
+
+  z-index: 9999;
+}
+
+
+/* Tri */
+
+.dtcc-button_order:hover::after {
+  content: "Tri de la colonne";
+}
+
+
+/* Recherche */
+
+.dtcc-button_dropdown[aria-label="Search"]:hover::after {
+  content: "Recherche dans la colonne";
+}
+
+
+/* Visibilité */
+
+.dtcc-button_dropdown[aria-label="Column visibility"]:hover::after {
+  content: "Afficher / masquer les colonnes";
+}
+
+
+/* ============================================================
+   24. SORTIES JUPYTER / MYST
+   ============================================================ */
+
+.myst-jp-nb-block .myst-outputs,
+.myst-jp-nb-block [data-name="outputs-container"] {
+  width: 100%;
+  max-width: none;
+}
+
+.myst-jp-nb-block [data-name="outputs-container"] > div {
+  width: 100%;
+}
+
+
+/* Élargir les sorties */
+
+.article-grid .myst-jp-nb-block {
+  width: calc(100% + 300px);
+
+  max-width: none;
+}
+
+
+/* Conteneur des sorties */
+
+.article-grid [data-name="outputs-container"] {
+  width: 100%;
+
+  max-width: none;
+}
+
+
+/* ============================================================
+   25. LARGEUR DE LA PAGE
+   ============================================================ */
+
+.bd-container {
+  max-width: 99% !important;
+}
+
+.bd-container__inner {
+  max-width: 99% !important;
+}
+
+.bd-main .bd-content .bd-article-container {
+  max-width: 100em !important;
+}
+
+
+/* ============================================================
+   26. MASQUER "MADE WITH MYST"
+   ============================================================ */
+
+a[href*="mystmd.org"] {
+  display: none !important;
+}
+
+
+/* ============================================================
+   27. MASQUER LE BOUTON DE CHANGEMENT DE THÈME
+   ============================================================
+
+   IMPORTANT :
+   Pendant les tests, je conseille de laisser ces règles
+   désactivées pour vérifier que html.dark fonctionne.
+   ============================================================ */
+
+/*
+button[aria-label*="theme"],
+button[aria-label*="Theme"],
+button[title*="theme"],
+button[title*="Theme"] {
+  display: none !important;
+}
+*/
+
+
+/* ============================================================
+   FIN DU CSS
+   ============================================================ */
