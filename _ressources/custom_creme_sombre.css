@@ -1,6 +1,7 @@
 /* ============================================================
-   JUPYTERBOOK / MYST
-   THEME CLAIR + VRAI THEME SOMBRE
+   JUPYTER BOOK 2.1.6 / MyST
+   THÈME CLAIR + THÈME SOMBRE
+   CSS GLOBAL
    ============================================================ */
 
 
@@ -100,7 +101,7 @@ html.dark {
 
 
 /* ============================================================
-   3. FOND GENERAL
+   3. FOND GÉNÉRAL
    ============================================================ */
 
 html,
@@ -159,20 +160,20 @@ h6,
 
 
 /* ============================================================
-   7. LIENS
+   7. LIENS GÉNÉRAUX
    ============================================================ */
 
 a {
-  color: var(--bleu-lien);
+  color: var(--bleu-lien) !important;
 }
 
 a:hover {
-  color: var(--bleu-titre);
+  color: var(--bleu-titre) !important;
 }
 
 
 /* ============================================================
-   8. COLONNE GAUCHE / TABLE DES MATIERES
+   8. COLONNE GAUCHE / TABLE DES MATIÈRES
    ============================================================ */
 
 .myst-primary-sidebar {
@@ -194,11 +195,48 @@ a:hover {
 
 
 /* ============================================================
-   9. TABLEAUX DATATABLES / ITABLES
+   9. PAGE LIENS
+   Classes générées par liens.py
    ============================================================ */
 
+.liens-categorie {
+  color: var(--bleu-titre) !important;
 
-/* Conteneur */
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  padding-bottom: 5px;
+
+  border-bottom: 2px solid var(--bleu-titre) !important;
+}
+
+.liens-liste {
+  color: var(--texte) !important;
+}
+
+.liens-item {
+  margin-bottom: 8px;
+  color: var(--texte) !important;
+}
+
+.liens-url {
+  color: var(--bleu-lien) !important;
+
+  font-weight: 500;
+
+  text-decoration: none;
+}
+
+.liens-url:hover {
+  color: var(--bleu-titre) !important;
+
+  text-decoration: underline;
+}
+
+
+/* ============================================================
+   10. DATATABLES — CONTENEUR
+   ============================================================ */
 
 .dataTables_wrapper {
   width: 100% !important;
@@ -206,7 +244,9 @@ a:hover {
 }
 
 
-/* Table */
+/* ============================================================
+   11. DATATABLES — TABLE
+   ============================================================ */
 
 table.dataTable {
   width: 100% !important;
@@ -220,16 +260,13 @@ table.dataTable {
 
 
 /* ============================================================
-   10. CELLULES
+   12. DATATABLES — CELLULES
    ============================================================ */
 
 table.dataTable th,
 table.dataTable td {
   border-color: var(--bordure) !important;
 }
-
-
-/* Corps du tableau */
 
 table.dataTable tbody td {
   text-align: center !important;
@@ -249,7 +286,7 @@ table.dataTable tbody td:first-child {
 
 
 /* ============================================================
-   11. LIGNES ALTERNÉES
+   13. DATATABLES — LIGNES ALTERNÉES
    ============================================================ */
 
 table.dataTable tbody tr:nth-child(even) td {
@@ -258,7 +295,7 @@ table.dataTable tbody tr:nth-child(even) td {
 
 
 /* ============================================================
-   12. SURVOL DES LIGNES
+   14. DATATABLES — SURVOL
    ============================================================ */
 
 table.dataTable tbody tr:hover td {
@@ -267,7 +304,7 @@ table.dataTable tbody tr:hover td {
 
 
 /* ============================================================
-   13. LIENS PDF / LIENS DANS TABLEAUX
+   15. DATATABLES — LIENS
    ============================================================ */
 
 table.dataTable tbody a,
@@ -283,7 +320,7 @@ table.dataTable tbody a:hover {
 
 
 /* ============================================================
-   14. HEADER DES TABLEAUX
+   16. DATATABLES — HEADER
    ============================================================ */
 
 table.dataTable thead tr {
@@ -333,7 +370,7 @@ table.dataTable thead th {
 
 
 /* ============================================================
-   15. ICÔNES DE TRI DATATABLES
+   17. DATATABLES — ICÔNES DE TRI
    ============================================================ */
 
 table.dataTable thead .dt-column-order,
@@ -344,9 +381,6 @@ table.dataTable thead .dt-column-order::after {
   color: var(--icone) !important;
 }
 
-
-/* Taille */
-
 table.dataTable thead .dt-column-order::before,
 table.dataTable thead .dt-column-order::after {
   font-size: 1.1rem !important;
@@ -354,7 +388,7 @@ table.dataTable thead .dt-column-order::after {
 
 
 /* ============================================================
-   16. BOUTONS DATATABLES
+   18. DATATABLES — BOUTONS
    ============================================================ */
 
 .dt-button {
@@ -385,7 +419,7 @@ table.dataTable thead .dt-column-order::after {
 
 
 /* ============================================================
-   17. CONTRÔLES DE COLONNES
+   19. DATATABLES — CONTRÔLES
    ============================================================ */
 
 .dt-column-order,
@@ -403,7 +437,7 @@ table.dataTable thead .dt-column-order::after {
 
 
 /* ============================================================
-   18. RECHERCHE DATATABLES
+   20. DATATABLES — RECHERCHE
    ============================================================ */
 
 .dt-search input,
@@ -421,7 +455,7 @@ table.dataTable thead .dt-column-order::after {
 
 
 /* ============================================================
-   19. PAGINATION
+   21. DATATABLES — PAGINATION
    ============================================================ */
 
 .dataTables_wrapper .dt-paging button {
@@ -446,7 +480,7 @@ table.dataTable thead .dt-column-order::after {
 
 
 /* ============================================================
-   20. COLUMN CONTROL — ITABLES
+   22. COLUMN CONTROL — ITABLES
    ============================================================ */
 
 .dtcc-button,
@@ -484,7 +518,7 @@ table.dataTable span.dtcc button.dtcc-button svg {
 
 
 /* ============================================================
-   21. TAILLE DES ICÔNES COLUMN CONTROL
+   23. COLUMN CONTROL — TAILLE DES ICÔNES
    ============================================================ */
 
 table.dataTable span.dtcc-button-icon svg {
@@ -501,7 +535,7 @@ table.dataTable span.dtcc button.dtcc-button {
 
 
 /* ============================================================
-   22. REMPLACEMENT DE L'ICÔNE ORDER
+   24. COLUMN CONTROL — ICÔNE TRI
    ============================================================ */
 
 .dtcc-button_order .dtcc-button-icon svg {
@@ -527,7 +561,7 @@ table.dataTable span.dt-column-order {
 
 
 /* ============================================================
-   23. INFOS-BULLES COLUMN CONTROL
+   25. COLUMN CONTROL — INFOBULLES
    ============================================================ */
 
 .dtcc-button {
@@ -538,7 +572,6 @@ table.dataTable span.dt-column-order {
   position: absolute;
 
   top: 35px;
-
   left: 50%;
 
   transform: translateX(-50%);
@@ -581,7 +614,7 @@ table.dataTable span.dt-column-order {
 
 
 /* ============================================================
-   24. SORTIES JUPYTER / MYST
+   26. SORTIES JUPYTER / MyST
    ============================================================ */
 
 .myst-jp-nb-block .myst-outputs,
@@ -595,26 +628,32 @@ table.dataTable span.dt-column-order {
 }
 
 
-/* Élargir les sorties */
+/* ============================================================
+   27. ÉLARGISSEMENT DES SORTIES
+   ============================================================ */
 
 .article-grid .myst-jp-nb-block {
   width: calc(100% + 300px);
-
   max-width: none;
 }
 
-
-/* Conteneur des sorties */
-
 .article-grid [data-name="outputs-container"] {
   width: 100%;
-
   max-width: none;
 }
 
 
 /* ============================================================
-   25. LARGEUR DE LA PAGE
+   28. TABLEAUX GÉNÉRÉS PAR PANDAS
+   ============================================================ */
+
+.article-grid table {
+  width: 100% !important;
+}
+
+
+/* ============================================================
+   29. LARGEUR GÉNÉRALE DE LA PAGE
    ============================================================ */
 
 .bd-container {
@@ -629,64 +668,71 @@ table.dataTable span.dt-column-order {
   max-width: 100em !important;
 }
 
-/* Page contenant le marqueur wide-page */
+
+/* ============================================================
+   30. PAGE "WIDE-PAGE"
+   ============================================================ */
+
 .article:has(.wide-page) {
-    max-width: 100% !important;
+  max-width: 100% !important;
+
+  grid-column: 1 / -1;
 }
 
-/* Agrandir la zone article */
-.article:has(.wide-page) {
-    grid-column: 1 / -1;
-}
 
-/* Masquer la colonne de droite (TOC) */
+/* Masquer la colonne de droite */
+
 .article:has(.wide-page) .block {
-    display: none !important;
+  display: none !important;
 }
+
+
+/* ============================================================
+   31. TABLEAU LARGE
+   ============================================================ */
 
 .wide-table {
-    width: 100vw;
-    margin-left: calc(-1 * var(--myst-margin-left));
+  width: 100vw;
+
+  margin-left: calc(-1 * var(--myst-margin-left));
 }
 
-.myst-jp-nb-block .myst-outputs,
-.myst-jp-nb-block [data-name="outputs-container"] {
-    width: 100%;
-    max-width: none;
-}
 
-.myst-jp-nb-block [data-name="outputs-container"] > div {
-    width: 100%;
-}
+/* ============================================================
+   32. CATALOGUE
+   ============================================================ */
 
 .catalogue-wrapper {
-    width: 100vw;
-    max-width: none;
-    margin-left: calc(50% - 50vw);
+  width: 100vw;
+  max-width: none;
+
+  margin-left: calc(50% - 50vw);
 }
 
 .catalogue-table {
-    width: 100%;
-}
-/* Autoriser les sorties de cellules Python à prendre toute la largeur */
-.article-grid .myst-jp-nb-block {
-    /*width: calc(100vw - 300px);*/
-    width: calc(100% + 300px);
-    max-width: none;
+  width: 100%;
 }
 
-/* élargir le conteneur des sorties */
-.article-grid [data-name="outputs-container"] {
-    width: 100%;
-    max-width: none;
-}
 
-/* le tableau généré par pandas */
-.article-grid table {
-    width: 100% !important;
-}
 /* ============================================================
-   26. MASQUER "MADE WITH MYST"
+   33. SORTIES PYTHON — PLEINE LARGEUR
+   ============================================================ */
+
+.article-grid .myst-jp-nb-block {
+  width: calc(100% + 300px);
+
+  max-width: none;
+}
+
+.article-grid [data-name="outputs-container"] {
+  width: 100%;
+
+  max-width: none;
+}
+
+
+/* ============================================================
+   34. MASQUER "MADE WITH MYST"
    ============================================================ */
 
 a[href*="mystmd.org"] {
@@ -695,12 +741,12 @@ a[href*="mystmd.org"] {
 
 
 /* ============================================================
-   27. MASQUER LE BOUTON DE CHANGEMENT DE THÈME
+   35. BOUTON DE CHANGEMENT DE THÈME
    ============================================================
 
-   IMPORTANT :
-   Pendant les tests, je conseille de laisser ces règles
-   désactivées pour vérifier que html.dark fonctionne.
+   NE PAS ACTIVER POUR LE MOMENT.
+   Laisser MyST gérer le changement clair/sombre.
+
    ============================================================ */
 
 /*
