@@ -7,7 +7,6 @@
 Georges Taconet
 ```
 
-
 Bienvenue sur le site de Georges Taconet.
 	 
 

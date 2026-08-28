@@ -758,6 +758,78 @@ button[title*="Theme"] {
 }
 */
 
+/* ============================================================
+   36. POPOVER AUTEUR MyST
+   ============================================================ */
+
+/* Nom de l'auteur */
+.myst-fm-author-popover-name {
+  color: var(--bleu-titre) !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+}
+
+/* Description / affiliation de l'auteur */
+.myst-fm-author-popover-affiliations {
+  color: var(--texte) !important;
+  font-size: 0.95rem !important;
+  line-height: 1.5 !important;
+  font-weight: 400 !important;
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+}
+
+/* Conteneur du popover */
+.myst-fm-author-popover {
+  background-color: var(--fond-surface) !important;
+  color: var(--texte) !important;
+  border-color: var(--bordure) !important;
+}
+
+/* Éléments internes */
+.myst-fm-author-popover * {
+  color: var(--texte) !important;
+}
+
+/* On remet le titre dans sa couleur */
+.myst-fm-author-popover .myst-fm-author-popover-name {
+  color: var(--bleu-titre) !important;
+}
+
+/* ============================================================
+   37. POPOVER AUTEUR MyST — MODE SOMBRE
+   ============================================================ */
+
+/* Fond du rectangle */
+html.dark .myst-fm-author-popover-content {
+  background-color: #222833 !important;
+  color: #e7e9ee !important;
+}
+
+/* Nom Georges Taconet */
+html.dark .myst-fm-author-popover-content .myst-fm-author-popover-name {
+  color: #b8c7f2 !important;
+}
+
+/* Description */
+html.dark .myst-fm-author-popover-content .myst-fm-author-popover-affiliations {
+  color: #e7e9ee !important;
+  font-weight: 400 !important;
+}
+
+/* Petite flèche */
+html.dark .myst-fm-author-popover-content svg.fill-white {
+  fill: #222833 !important;
+}
+/* ============================================================
+   MASQUER LE POPOVER AUTEUR MyST
+   ============================================================ */
+
+.myst-fm-author-popover-content {
+  display: none !important;
+}
+
+
 
 /* ============================================================
    FIN DU CSS
