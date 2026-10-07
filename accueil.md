@@ -3,6 +3,24 @@
 
 **Musiciens, musicologues, mélomanes, amateurs de musique, découvreurs de talents,** ce site vous invite à mieux connaître l'homme, à entendre et avoir accès aux œuvres et **partitions de nombreuses mélodies, œuvres pour piano, sonates.**    
  
+## Catalogue des oeuvres
+
+
+```{figure} photos/TonImagePartout.jpg
+:alt: 
+:width:
+:align: left
+
+Anne-Cécile Laurent et Domitille Bès au Havre en Septembre 2026
+```
+
+
+Pour découvrir la musique de Georges Taconet, vous pouvez : entendre quelques extraits musicaux et télécharger les **partitions** sur les pages du [catalogue](catalogue/catalogue).
+
+<div class="home-buttons">
+  <a href="catalogue/catalogue" class="home-button">📖 Catalogue</a>
+</div>
+ 
 ## L'homme
 Georges Taconet est un musicien distingué et discret, un compositeur de la première partie du XXème siècle. 
 
@@ -28,20 +46,3 @@ Sa musique s'inscrit dans les recherches harmoniques et la tradition musicale fr
 </div>
 
 
-## Catalogue des oeuvres
-
-
-```{figure} photos/TonImagePartout.jpg
-:alt: 
-:width:
-:align: left
-
-Anne-Cécile Laurent et Domitille Bès au Havre en Septembre 2026
-```
-
-
-Pour découvrir la musique de Georges Taconet, vous pouvez : entendre quelques extraits musicaux et télécharger les **partitions** sur les pages du [catalogue](catalogue/catalogue).
-
-<div class="home-buttons">
-  <a href="catalogue/catalogue" class="home-button">📖 Catalogue</a>
-</div>
