@@ -6,9 +6,9 @@ execute:
 project:
   id: e2becd5f-0c7f-4ea0-9117-658cc62194dd
   #title: Georges Taconet, compositeur français
-  authors: 
+  #authors: 
    # - name: 
-      note: Compositeur de musique classique du Havre et de Saint-Adresse. Mélodies, sonates, quintette, orchestration et partitions.
+   #   note: Compositeur de musique classique du Havre et de Saint-Adresse. Mélodies, sonates, quintette, orchestration et partitions.
       #affiliation: Compositeur de musique classique du Havre et de Saint-Adresse. Mélodies, sonates, quintette, orchestration et partitions.
   description: Georges Taconet compositeur de musique classique du Havre Saint Adresse, mélodies, sonates, quintette, orchestration, partitions
   static_files:

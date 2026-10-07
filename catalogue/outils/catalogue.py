@@ -12,7 +12,8 @@ csvfile="CatalogueGeorgesTaconet_pourJupyterBook.csv"
 #usecols à choisir parmi "n°opus" "titre" "nb de pages"	"Genre" "Instruments" "durée<br>en mn" 
 # "Poème de" "Poème<br>Texte" "Année" "Ref SACEM" "date SACEM" "note max" "Editeur" 
 #"Extrait" "Partition<br>éditée" "Partition<br>manuscrite" 
-usecols = ["n°opus","titre","Genre","Poème<br>Texte","Instruments","Extrait","Partition<br>éditée", "Partition<br>manuscrite","Année"]
+usecols = ["titre","n°opus","Partition<br>éditée", 
+"Partition<br>manuscrite","Extrait","Genre","Instruments","Année","Poème<br>Texte"]
 symboleextrait="&#9836;"
 
 def partitionGraveeURL(u):
@@ -29,7 +30,8 @@ def lire_formater_catalogue():
 	
   options.warn_on_undocumented_option = False
   # Charger le fichier CSV
-  df = pd.read_csv(csvfile, index_col=1, usecols=usecols)
+  df = pd.read_csv(csvfile, usecols=usecols)
+  df = df[usecols] # Changer l'ordre des colonnes
   #df = pd.read_csv("CatalogueGeorgesTaconet.csv", index_col=1, usecols=usecols)
   df["Partition<br>éditée"]=df["Partition<br>éditée"].apply(lambda u:  '/' if pd.isna(u) else partitionGraveeURL(u))
 

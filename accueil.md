@@ -1,7 +1,7 @@
  # À la découverte du compositeur
  
-Ce site vous invite à mieux connaître l'homme, à entendre et avoir accès aux œuvres.
-**Musiciens, musicologues, mélomanes, amateurs de musique, découvreurs de talents,** ce site vous offre l'accès aux **partitions de nombreuses mélodies, œuvres pour piano, sonates.**    
+
+**Musiciens, musicologues, mélomanes, amateurs de musique, découvreurs de talents,** ce site vous invite à mieux connaître l'homme, à entendre et avoir accès aux œuvres et **partitions de nombreuses mélodies, œuvres pour piano, sonates.**    
  
 ## L'homme
 Georges Taconet est un musicien distingué et discret, un compositeur de la première partie du XXème siècle. 
