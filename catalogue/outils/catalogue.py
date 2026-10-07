@@ -117,7 +117,7 @@ def filtrer_catalogue(df, filtre):
     # paging=False
 def afficher_catalogue(df):
   #df = df.reset_index(drop=True)
-
+  df = df.reset_index(drop=True)
   show(df, searchable=True, sortable=True, allow_html=True,columnControl=["order", "colVisDropdown", "searchDropdown"])
 
 
